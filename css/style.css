@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --footer: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+  --Buttons: hsl(224, 93%, 58%);
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  color: var(--footer);
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: bisque; */
+  padding: 3em 4em;
+  width: 100%;
+  height: 60px;
+}
+
+.logo > img {
+  /* width: 120px; */
+  /* line-height: 60px; */
+}
+ul {
+  display: flex;
+  line-height: 40px;
+}
+li {
+  list-style: none;
+}
+li > a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  margin: 0 1.5em;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  padding: 0 4em;
+  margin: 5em 0;
+}
+
+.hero-cta {
+  width: 50%;
+  margin-top: 5em;
+  margin-right: 5em;
+}
+h1 {
+  font-size: 2.5em;
+  font-family: "Raleway", sans-serif;
+  line-height: 50px;
+}
+
+.hero-cta > p {
+  font-size: 1.1em;
+  padding-right: 3.5em;
+  margin: 1em 0;
+}
+.signin {
+  width: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+.signin-cta {
+  width: 30%;
+  padding: 10px;
+  color: white;
+  border: 2px solid var(--Buttons);
+  border-radius: 2px;
+  background-color: var(--Buttons);
+}
+
+.signin-cta:hover {
+  background-color: hsl(224, 79%, 69%);
+}
+.hero-img {
+  width: 50%;
+}
+
+.hero-img > img {
+  width: 100%;
+}
+
+.info-sec {
+  display: flex;
+  background-image: url(/images/bg-curve-desktop.svg);
+  width: 100%;
+  /* height: 100%; */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 6em;
+  padding: 8em 4em;
+}
+
+.work-btn{
+  width: 30%;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--Moderate-Cyan);
+}
+
+.works {
+  text-decoration: none;
+  color: var(--Moderate-Cyan);
+}
+
+.sec-content > h1 {
+  margin-bottom: 0.5em;
+}
+
+.sec-content {
+  width: 50%;
+}
+
+.sec-content > p {
+  line-height: 25px;
+  margin: 1em 0;
+  padding-right: 10em;
+}
+
+.sec-image {
+  width: 50%;
+}
+
+.sec-image > img {
+  width: 100%;
+}
+
+.testimonial {
+  background-color: white;
+  width: 80%;
+  padding: 40px;
+  border-radius: 5px;
+  margin-top: 4em;
+  box-shadow: 1px 1px 20px 1px #888888;
+}
+.testimonial > p {
+  font-weight: 700;
+  line-height: 25px;
+  margin: 10px 0 20px 0;
+}
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.newsletter {
+  display: flex;
+  background-color: var(--desaturated-blue);
+  color: white;
+  padding: 5em 4em;
+}
+
+.access {
+  width: 60%;
+}
+.access > h2 {
+  font-size: 2em;
+  font-family: "Raleway", sans-serif;
+}
+
+.access > p {
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 28px;
+  /* Text color gradient */
+  /* color: #ffc107;
+    background-image: -webkit-linear-gradient(180deg, #07e6ff, #ff0062);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+  margin-top: 1em;
+}
+
+.sign-up {
+  width: 40%;
+}
+.e-address {
+  width: 80%;
+  padding: 15px 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+button {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 15px 20px;
+  background-color: var(--Buttons);
+  color: white;
+  border: 1px solid var(--Buttons);
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: hsl(224, 79%, 69%);
+}
+
+.contact > p {
+  margin-top: 1em;
+}
+
+.footer-cta {
+  display: flex;
+  justify-content: space-between;
+  padding: 6em 4em;
+  background-color: var(--footer);
+  color: white;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  row-gap: 20px;
+}
+
+.links > a {
+  text-decoration: none;
+  color: white;
+}
+.social-icons > i {
+  margin-top: 3em;
+  margin-right: 6px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  padding: 5px;
+}
+#facebook {
+  padding: 5px 8px;
+}
+
+.links > a:hover,
+.social-icons > i:hover {
+  color: var(--Buttons);
+}
+
+@media (max-width: 375px) {
+  nav {
+    display: flex;
+    justify-content: left;
+    padding: 1.5em;
+  }
+
+  .logo > img {
+    width: 80px;
+    line-height: 40px;
+    margin-right: 20px;
+  }
+
+  ul {
+    line-height: normal;
+    margin-left: 30px;
+  }
+
+  li > a {
+    margin: 0 0 0 0.9em;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 3em 1em;
+    margin: 0 auto;
+  }
+
+  .hero-cta {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    margin-top: 3em;
+  }
+
+  h1 {
+    font-size: 1.6em;
+    line-height: 35px;
+    font-weight: 700;
+  }
+
+  .hero-cta > p {
+    font-size: 1.1em;
+    padding: 0 0.5em;
+    margin: 2em 0;
+  }
+
+  .signin {
+    width: 100%;
+  }
+
+  .signin-cta {
+    width: 100%;
+    margin-top: 1.3em;
+  }
+
+  .info-sec {
+    background-image: url(/images/bg-curve-mobile.svg);
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4em 1em;
+  }
+
+  .sec-content > h2{
+    font-size: 1.1em;
+  }
+
+ 
+  .sec-content {
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sec-content > p{
+    margin-top: 2em;
+    padding-right: 0%;
+    text-align: left;
+  }
+
+  .sec-image {
+    width: 100%;
+  }
+
+  .work-btn{
+    margin: 3em auto;
+    width: 55%;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--Moderate-Cyan);
+  }
+
+  .testimonial{
+    width: 80%;
+    padding: 1.2em 1.5em 2em 2em;
+    font-size: 12px;
+    text-align: left;
+    margin: 4em 2em;
+  }
+
+  .testimonial > p{
+    margin: 5px 0 10px 0;
+  }
+
+  .newsletter{
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1em;
+  }
+
+  .access{
+    width: 100%;
+    text-align: center;
+  }
+  .access > h2{
+    font-size: 1.3em;
+  }
+  .access > p{
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .sign-up{
+    width: 100%;
+  }
+
+  .e-address{
+    width: 80%;
+    margin:2em 2em 1em 2em;
+  }
+  button{
+    width: 80%;
+    margin: 0 2em;
+  }
+
+  .footer-cta {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2em ;
+  }
+
+  .social-icons{
+    text-align: center;
+    margin-top: 2em;
+  }
+}
